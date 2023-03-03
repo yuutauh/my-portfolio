@@ -9,7 +9,7 @@ import {
   Image,
   Text,
   Link,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import { DiGithubBadge } from "react-icons/di";
 import { SiQiita } from "react-icons/si";
@@ -34,7 +34,7 @@ const Work = () => {
         <Stack>
           <CardBody>
             <Heading size="md">only text</Heading>
-            <Text py="1" fontSize='sm'>
+            <Text py="1" fontSize="sm">
               Reactとfirebaseを使用して制作した掲示板サイトです。
               タグ付けやフォロー、検索など掲示板の機能をきちんと揃えています。
               デザインにはNeumorphismを使用しこだわりました。
@@ -44,7 +44,9 @@ const Work = () => {
           <CardFooter>
             <ButtonGroup spacing="4">
               <Button variant="solid" colorScheme="green">
-                 go to only text
+                <Link href="https://onlytext.net" isExternal>
+                  go to only text
+                </Link>
               </Button>
               <Button variant="link">
                 <Link href="https://github.com/yuutauh/first" isExternal>
@@ -52,7 +54,10 @@ const Work = () => {
                 </Link>
               </Button>
               <Button variant="link">
-                <Link href="https://qiita.com/yuta_11/items/985b0599a66e9d935630" isExternal>
+                <Link
+                  href="https://qiita.com/yuta_11/items/985b0599a66e9d935630"
+                  isExternal
+                >
                   <Icon w={8} h={8} color="gray.500" as={SiQiita} />
                 </Link>
               </Button>
